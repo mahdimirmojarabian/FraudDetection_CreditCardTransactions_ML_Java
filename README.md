@@ -4,7 +4,6 @@ This project leverages machine learning models (Logistic Regression, RandomFores
 
 ## Project Structure
 
-```plaintext
 
 ├── .vscode/ (not included in repository)
 ├── src/
