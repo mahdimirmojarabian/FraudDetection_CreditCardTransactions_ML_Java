@@ -4,7 +4,7 @@ This project leverages machine learning models (Logistic Regression, RandomFores
 
 ## Project Structure
 
-
+```plaintext
 ├── .vscode/ (not included in repository)
 ├── src/
 │   ├── main/
@@ -29,6 +29,7 @@ This project leverages machine learning models (Logistic Regression, RandomFores
 ├── pom.xml
 ├── README.md
 └── creditcard.csv (not included in repository)
+```
 
 ## Project Structure
 - Java (23.0.1)
@@ -37,24 +38,32 @@ This project leverages machine learning models (Logistic Regression, RandomFores
 
 ## Setup
 1- Clone the Repository:
-`git clone https://github.com/mahdimirmojarabian/FraudDetection_CreditCardTransactions_ML_Java.git`
+```python
+git clone https://github.com/mahdimirmojarabian/FraudDetection_CreditCardTransactions_ML_Java.git
+```
 
-2. Build the Project:
+2- Build the Project:
 Build the project using Maven to resolve dependencies and compile the code:
 
-`mvn clean package`
+```python
+mvn clean package
+```
 
-3. Dataset:
+3- Dataset:
 Download the dataset from from [Kaggle](https://www.kaggle.com/mlg-ulb/creditcardfraud/data).
 
-4. Training the Models:
+4- Training the Models:
 Run the training script to preprocess the data, split it into training and test sets, handle class imbalance, train the models, and save them:
 
-`java -jar target/fraud-detection-1.0-SNAPSHOT.jar`
+```python
+java -jar target/fraud-detection-1.0-SNAPSHOT.jar
+```
 
-5. Evaluating the Models:
+5- Evaluating the Models:
 Run the evaluation script to load the trained models and evaluate them on the test set:
-`java -cp target/fraud-detection-1.0-SNAPSHOT.jar com.example.EvaluateModels`
+```python
+java -cp target/fraud-detection-1.0-SNAPSHOT.jar com.example.EvaluateModels
+```
 
 ## Results:
 
@@ -64,7 +73,6 @@ Run the evaluation script to load the trained models and evaluate them on the te
 - **Test set size:** 85,443
 
 ## Logistic Regression Results
-======
 
 - **Correctly Classified Instances:** 83,499 (97.7248%)
 - **Incorrectly Classified Instances:** 1,944 (2.2752%)
@@ -76,7 +84,6 @@ Run the evaluation script to load the trained models and evaluate them on the te
 - **Total Number of Instances:** 85,443
 
 ## RandomForest Results
-======
 
 - **Correctly Classified Instances:** 85,430 (99.9848%)
 - **Incorrectly Classified Instances:** 13 (0.0152%)
@@ -88,7 +95,6 @@ Run the evaluation script to load the trained models and evaluate them on the te
 - **Total Number of Instances:** 85,443
 
 ## BayesNet Results
-======
 
 - **Correctly Classified Instances:** 108 (0.1264%)
 - **Incorrectly Classified Instances:** 85,335 (99.8736%)
